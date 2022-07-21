@@ -17094,3 +17094,7 @@ flex-wrap: wrap;
 .widget .widget-title {
   padding-bottom: 0.9rem !important;
 }
+
+.breadcrumb-nav{
+  background-color: unset;
+}

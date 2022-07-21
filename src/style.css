@@ -7018,13 +7018,13 @@ color: var(--main-color);
   font-weight: normal;
 }
 
-.btn-fb{
-  background: #3b5998 !important;
+body .btn-fb{
+  background-color: #3b5998 !important;
   color: white !important;
 }
 
-.btn-google{
-  background: #4285F4 !important;
+body .btn-google{
+  background-color: #4285F4 !important;
   color: white !important;
 }
 
@@ -7217,4 +7217,25 @@ color: var(--main-color);
 .MuiButton-root{
   font-size: 15px !important;
   outline-width: 0 !important;
+}
+
+.MuiButton-contained{
+  background-color: #00917C !important;
+}
+
+.w-350{
+  width: 350px;
+}
+
+.w-70{
+  width: 60%;
+}
+
+.seller_banner img{
+  margin-top: -30px;
+}
+
+.bbg {
+  padding-top: 100px !important;
+  padding-bottom: 100px;
 }

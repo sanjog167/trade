@@ -1,35 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
-import Banner from './Banner';
-import Popularcategories from './Popularcategories';
-import Fourbox from './Fourbox';
-import Ads from './Ads';
-import Ads2 from './Ads2';
-import Deals from './Deals';
-import Quotes from './Quotes';
-import Trending from './Trending';
-import './style.css'
-import './custom-style.css'
-import './bootstrap.min.css'
-import './custom.css'
-import Homecategoryone from './Homecategoryone';
-import Homecategorytwo from './Homecategorytwo';
+import Home from './Home';
+import Product from './Product';
+import Login from './Login';
+import ForgotPassword from './ForgotPassword';
+import BecomeSeller from './BecomeSeller';
+import { Switch, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Banner />
-      <Popularcategories />
-      <Fourbox />
-      <Trending />
-      <Ads />
-      <Homecategoryone />
-      <Homecategorytwo />
-      <Ads2 />
-      <Deals />
-      <Quotes />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/product" component={Product} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/forgot-password" component={ForgotPassword} />
+        <Route exact path="/become-a-seller" component={BecomeSeller} />
+      </Switch>
     </div>
   );
 }
